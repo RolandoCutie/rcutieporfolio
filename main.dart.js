@@ -67024,7 +67024,7 @@ return A.vy(A.Yq(!1,!0,A.cB(o,A.Jc(m,A.og(o,o,!l||p.d?B.i:B.j,o,o,o,o,o,o,o,o,20
 A.aaZ.prototype={
 $0(){var s=0,r=A.a2(t.H),q
 var $async$$0=A.a3(function(a,b){if(a===1)return A.a_(b,r)
-while(true)switch(s){case 0:q=window.open("./assets/cv/CV.pdf","download")
+while(true)switch(s){case 0:q=window.open("./assets/assets/cv/CV.pdf","download")
 A.ayv(q)
 return A.a0(null,r)}})
 return A.a1($async$$0,r)},
