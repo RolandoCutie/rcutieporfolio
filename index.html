@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <!--
       If you are serving your web app in a path other than the root, change the
       href value below to reflect the base path you are serving from.
@@ -14,157 +14,157 @@
       This is a placeholder for base href that will be replaced by the value of
       the `--base-href` argument provided to `flutter build`.
     -->
-    
 
-    <meta charset="UTF-8" />
-    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
-    <meta name="description" content="A new Flutter project." />
+
+    <meta charset="UTF-8"/>
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible"/>
+    <meta name="description" content="A new Flutter project."/>
 
     <!-- iOS meta tags & icons -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="porfoliorcutieflutter" />
-    <link rel="apple-touch-icon" href="icons/Icon-192.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="apple-mobile-web-app-title" content="porfoliorcutieflutter"/>
+    <link rel="apple-touch-icon" href="icons/Icon-192.png"/>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="icon" type="image/png" href="favicon.png"/>
 
     <title>Rcutie Portfolio</title>
-    <link rel="manifest" href="manifest.json" />
+    <link rel="manifest" href="manifest.json"/>
     <style>
-      body {
-        background-color: #f5f5f5ff;
-        margin: 0px;
-      }
-      .main-content {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: opacity 0.4s ease-out;
-      }
-      .indicator {
-        width: 50vw;
-        border-radius: 50%;
-        animation: spin 2s linear infinite;
-        position: absolute;
-      }
-
-      @keyframes spin {
-        0% {
-          transform: rotate(0deg);
+        body {
+          background-color: #f5f5f5ff;
+          margin: 0px;
         }
-        100% {
-          transform: rotate(360deg);
+        .main-content {
+          width: 100vw;
+          height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: opacity 0.4s ease-out;
         }
-      }
-
-      .loader {
-        position: relative;
-        width: 30vw;
-        height: 30vh;
-        border-radius: 50%;
-        background: #f5f5f5ff;
-        animation: animate 1.2s linear infinite;
-      }
-
-      @keyframes animate {
-        0% {
-          transform: rotate(0deg);
+        .indicator {
+          width: 50vw;
+          border-radius: 50%;
+          animation: spin 2s linear infinite;
+          position: absolute;
         }
 
-        100% {
-          transform: rotate(360deg);
+        @keyframes spin {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
         }
-      }
 
-      .loader span {
-        position: absolute;
-        width: 20vw;
-        height: 20vh;
-        border-radius: 60%;
-        background: #f5f5f5ff;
-      }
+        .loader {
+          position: relative;
+          width: 30vw;
+          height: 30vh;
+          border-radius: 50%;
+          background: #f5f5f5ff;
+          animation: animate 1.2s linear infinite;
+        }
 
-      .loader span:nth-child(1) {
-        filter: blur(5px);
-      }
+        @keyframes animate {
+          0% {
+            transform: rotate(0deg);
+          }
 
-      .loader span:nth-child(2) {
-        filter: blur(10px);
-      }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
 
-      .loader span:nth-child(3) {
-        filter: blur(25px);
-      }
+        .loader span {
+          position: absolute;
+          width: 20vw;
+          height: 20vh;
+          border-radius: 60%;
+          background: #f5f5f5ff;
+        }
 
-      .loader span:nth-child(4) {
-        filter: blur(50px);
-      }
+        .loader span:nth-child(1) {
+          filter: blur(5px);
+        }
 
-      .loader:after {
-        content: "";
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        right: 10px;
-        bottom: 10px;
-        background: #f5f5f5ff;
-        border-radius: 50%;
-      }
+        .loader span:nth-child(2) {
+          filter: blur(10px);
+        }
+
+        .loader span:nth-child(3) {
+          filter: blur(25px);
+        }
+
+        .loader span:nth-child(4) {
+          filter: blur(50px);
+        }
+
+        .loader:after {
+          content: "";
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          right: 10px;
+          bottom: 10px;
+          background: #f5f5f5ff;
+          border-radius: 50%;
+        }
     </style>
 
     <script defer>
-      // The value below is injected by flutter build, do not touch.
-      const serviceWorkerVersion = "4293657340";
+        // The value below is injected by flutter build, do not touch.
+        const serviceWorkerVersion = "2132787666";
     </script>
     <!-- This script adds the flutter initialization JS code -->
     <script src="flutter.js" defer></script>
-  </head>
-  <body style="overflow: hidden">
-    <script defer>
-      function delay(time) {
-        return new Promise((resolve) => setTimeout(resolve, time));
-      }
+</head>
+<body style="overflow: hidden">
+<script defer>
+    function delay(time) {
+      return new Promise((resolve) => setTimeout(resolve, time));
+    }
 
-      window.addEventListener("load", function (ev) {
-        var loaderContent = document.querySelector("#loader-content");
-        // Download main.dart.js
-        _flutter.loader.loadEntrypoint({
-          serviceWorker: {
-            serviceWorkerVersion: serviceWorkerVersion,
-          },
-          onEntrypointLoaded: function (engineInitializer) {
-            engineInitializer
-              .initializeEngine()
-              .then(async function (appRunner) {
-                loaderContent.style.opacity = "0";
-                await delay(400);
-                appRunner.runApp();
-              });
-          },
-        });
+    window.addEventListener("load", function (ev) {
+      var loaderContent = document.querySelector("#loader-content");
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function (engineInitializer) {
+          engineInitializer
+            .initializeEngine()
+            .then(async function (appRunner) {
+              loaderContent.style.opacity = "0";
+              await delay(400);
+              appRunner.runApp();
+            });
+        },
       });
-    </script>
-    <script defer>
-      window.onload = function () {
-        setTimeout(function () {
-          var loadingIndicator = document.getElementById("loader-content");
-          if (loadingIndicator) {
-            loadingIndicator.remove();
-          }
-        }, 8000);
-      };
-    </script>
-    <div id="loader-content" class="main-content">
-      <div class="loader">
+    });
+</script>
+<script defer>
+    window.onload = function () {
+      setTimeout(function () {
+        var loadingIndicator = document.getElementById("loader-content");
+        if (loadingIndicator) {
+          loadingIndicator.remove();
+        }
+      }, 8000);
+    };
+</script>
+<div id="loader-content" class="main-content">
+    <div class="loader">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
-      </div>
-      <img class="indicator" src="logo.jpeg" alt="My app logo" />
     </div>
-  </body>
+    <img class="indicator" src="logo.jpeg" alt="My app logo"/>
+</div>
+</body>
 </html>
