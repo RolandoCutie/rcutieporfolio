@@ -1,1 +1,1 @@
-[{"family":"MaterialIcons","fonts":[{"asset":"fonts/MaterialIcons-Regular.otf"}]},{"family":"packages/simple_icons/SimpleIcons","fonts":[{"asset":"packages/simple_icons/fonts/SimpleIcons.ttf"}]}]
+[{"family":"MaterialIcons","fonts":[{"asset":"fonts/MaterialIcons-Regular.otf"}]},{"family":"CriqueGrotesk","fonts":[{"weight":400,"asset":"assets/fonts/CriqueGrotesk.ttf"},{"weight":700,"asset":"assets/fonts/CriqueGrotesk-Bold.ttf"}]},{"family":"packages/simple_icons/SimpleIcons","fonts":[{"asset":"packages/simple_icons/fonts/SimpleIcons.ttf"}]}]
