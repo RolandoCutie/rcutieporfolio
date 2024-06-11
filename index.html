@@ -14,7 +14,7 @@
       This is a placeholder for base href that will be replaced by the value of
       the `--base-href` argument provided to `flutter build`.
     -->
-
+    <base href="/" />
 
     <meta charset="UTF-8" />
     <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
@@ -114,15 +114,11 @@
         border-radius: 50%;
       }
     </style>
-
-    <script defer>
-      // The value below is injected by flutter build, do not touch.
-      const serviceWorkerVersion = "3936584937";
-    </script>
     <!-- This script adds the flutter initialization JS code -->
     <script src="flutter.js" defer></script>
   </head>
   <body style="overflow: hidden">
+    <script src="flutter_bootstrap.js" async></script>
     <script defer>
       function delay(time) {
         return new Promise((resolve) => setTimeout(resolve, time));
@@ -131,10 +127,7 @@
       window.addEventListener("load", function (ev) {
         var loaderContent = document.querySelector("#loader-content");
         // Download main.dart.js
-        _flutter.loader.loadEntrypoint({
-          serviceWorker: {
-            serviceWorkerVersion: serviceWorkerVersion,
-          },
+        _flutter.load({
           onEntrypointLoaded: function (engineInitializer) {
             engineInitializer
               .initializeEngine()
